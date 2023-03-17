@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+      p { color:red; }
+  </style>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script>
+  $(document).ready(function () {
+      alert('DOM is loaded.'); //  This alert happens immediatley when the DOM is ready, but before the next line alters it.(So it wont look instantaneous.)
+      $("p").text("The DOM is ").append("<span style='color:black;'>now loaded,</span>").append(" thus can be manipulated.");// append is used due to some issues with javascript concatenation and web-kit Chrome/Safari
+  });
+  </script>
+</head>
+<body>
+ 
+ 
+<p>Not loaded yet.</p>
+<p>
+ 
+<p>
+</body>
+</html>
