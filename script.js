@@ -1,6 +1,6 @@
 <script>
 $(document).ready(function(){
-    let apiKey = "##yourapikey##"
+    let apiKey = "AIzaSyA_ZnOHfTxardiWVZUHy-LAsNycJGeFdmU"
  
     $("form").submit((e) => {
         e.preventDefault()
